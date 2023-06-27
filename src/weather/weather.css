@@ -1,0 +1,293 @@
+main{
+  height: 100vh;
+  width: 100%;
+}
+
+.weatherapp {
+  margin-top: 3rem;
+  height: 30vh;
+  width: 100%;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: linear-gradient(#23282b, #505357); */
+
+}
+
+.weather {
+  height: 30vh;
+  width: 90%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  /* background-color: #464D53; */
+  background: linear-gradient(45deg, #464D53, #818181);
+
+
+}
+
+.main section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.main section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #ffff;
+}
+
+.main section aside {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.main section aside svg {
+  font-size: 2rem;
+  color: #ffff;
+}
+
+.main section aside p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #ffff;
+}
+
+.time {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #ffffff;
+}
+
+.searchBox {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+
+}
+.searchBox form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.searchBox form #search {
+  height: 2.2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Ubuntu";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 2rem;
+}
+.searchBox form button{
+  padding: 0.4rem 1rem;
+  background: linear-gradient(45deg,#718386,#999);
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+.searchBox form button:hover{
+  transform: translateX(2px);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0,0.2);
+}
+.searchBox p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Ubuntu";
+  color: #e4dfdf;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+article .season {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+article .season p {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #ffffff;
+}
+
+article .season span {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Ubuntu";
+  color: #ffffff;
+}
+
+article .season span svg {
+  font-size: 1.2rem;
+}
+
+
+.secondpara {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.secondpara .box {
+  height: 12rem;
+  width: 10rem;
+  /* background-color: #464D53; */
+  background: linear-gradient(45deg, #464D53, #818181);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.3s;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #494949
+}
+
+.box p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #ffff;
+}
+
+.box span {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #ffff;
+}
+
+.box img {
+  height: 6rem;
+  width: 7rem;
+}
+
+@media screen and (max-width:1000px) {
+  .weatherapp {
+    padding: 0;
+  }
+
+  .weather {
+    width: 100%;
+  }
+}
+@media screen and (max-width:820px) {
+  .secondpara{
+      height: 30vh;
+  }
+}
+@media screen and (max-width:600px) {
+main{
+  height: 180vh;
+  overflow-y: hidden;
+}
+  .weather {
+    height: 65vh;
+    width: 80%;
+  }
+
+  .weather .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .main section {
+    height: 35%;
+  }
+  .main section h2 {
+    font-size: 2.5rem;
+  }
+  .main section aside p{
+    font-size: 2rem;
+  }
+
+  .searchBox {
+    width: 60%;
+    height: 34%;
+    justify-content: flex-start;
+    gap: 1.2rem;
+  }
+  #search{
+    padding: 0 1rem;
+
+  }
+  .season{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .secondpara {
+    height: 170vh;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+}
+}
+
+@media screen and (max-width:380px) {
+  .weather {
+      height: 70vh;
+  }
+  .searchBox {
+    width: 90%;
+  }
+  .searchBox form #search {
+    width: 90%;
+  }
+  .secondpara {
+    height: 200vh;
+}
+}
